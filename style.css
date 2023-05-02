@@ -1,0 +1,66 @@
+body {
+    background-color: #b8fbcc;
+}
+
+body,
+#app {
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+
+#app {
+    display: grid;
+}
+
+i.icon.play {
+    display: block;
+    width: 1.1rem;
+    content: url("play.svg");
+    place-self: center;
+}
+
+#btn {
+    place-self: center;
+    border: 0;
+    outline: 0;
+    padding: 10px;
+    background-color: #0ed244;
+    color: #fff;
+    width: 3.4rem;
+    display: grid;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    box-shadow: 0 8px 25px -8px #0ed244;
+    transition: all 0.2s;
+}
+
+#btn:hover {
+    background-color: #30da5f;
+}
+
+#btn.active {
+    background-color: #52e27a;
+}
+
+#round {
+    position: absolute;
+    /* 半径 */
+    --r: 0;
+    /* 圆心left */
+    --l: 0;
+    /* 圆心top */
+    --t: 0;
+    background-color: #52e27a;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    clip-path: circle(var(--r) at var(--l) var(--t));
+    display: grid;
+    place-items: center;
+}
+
+#btn.active + #round {
+    --r: 100%;
+}
