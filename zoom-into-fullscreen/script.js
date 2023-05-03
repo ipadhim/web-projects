@@ -1,7 +1,7 @@
 const btn = document.getElementById("btn");
 const round = document.getElementById("round");
 btn.addEventListener(
-    "pointerdown",
+    "pointerup",
     (e) => {
         round.style.setProperty("--l", e.pageX + "px");
         round.style.setProperty("--t", e.pageY + "px");
