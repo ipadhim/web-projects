@@ -1,5 +1,9 @@
 {
-  "rewrites": [
-    { "source": "/favicon.ico", "destination": "https://www.spct.ltd/favicon.svg" },
+  "routes": [
+    {
+      "src": "/favicon.ico",
+      "headers": { "Location": "https://s-t.fun/favicon.svg" },
+      "status": 308
+    }
   ]
 }
