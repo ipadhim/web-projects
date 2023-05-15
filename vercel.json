@@ -2,7 +2,7 @@
   "routes": [
     {
       "src": "/favicon.ico",
-      "headers": { "Location": "https://s-t.fun/favicon.svg" },
+      "headers": { "Location": "https://s-t.fun/favicon.ico" },
       "status": 308
     }
   ]
